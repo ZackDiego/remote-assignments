@@ -1,0 +1,175 @@
+.main-header,
+.header-nav,
+header,
+.header-nav-item,
+.row,
+.service-item,
+.dev-item,
+.item-left {
+    display: flex;
+}
+
+.header-title {
+    padding-left: 1em;
+}
+
+.main-header {
+    justify-content: space-between;
+    border-bottom: 5px solid gainsboro;
+}
+
+.header-nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+.header-nav-item{
+    width: 80px;
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav-item.item-2{
+    flex-grow: 2;
+    background-color: brown;
+}
+
+a {
+    margin: auto;
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* banner */
+.banner {
+	background-color: #3164ff;
+	padding: 1em 0;
+	margin-bottom: 48px;
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+
+.banner a {
+    color: white;
+}
+
+h2 strong {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.row {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.row div{
+    flex: 1 1 400px;
+    margin: 10px 20px;
+}
+
+#context-img {
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.blue-link{
+    color: rgb(0, 64, 255);
+    font-size: 1.5em;
+}
+
+.banner-text{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+div.service-item {
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px 5px;
+}
+
+.service-img{
+    width: 100px;
+    height: auto;
+}
+
+div.service-item p{
+    text-align: center;
+    padding: 0 5px;
+}
+
+.btn {
+    display: block;
+    background-color: #3164ff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: none; /* Remove any default box-shadow */
+    border: none; /* Remove any default borders */
+}
+
+.btn a{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.banner-text h3{
+    font-weight: normal;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+}
+
+div.item-left{
+    flex-direction: column;
+    flex: 0 0 350px;
+    margin: 10px 20px;
+
+}
+
+div.dev-item{
+    
+    align-items: center;
+    flex: 0 0 550px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px 5px;
+    justify-content: space-around;
+}
+
+.btn-small {
+    display: block;
+    background-color: #3164ff;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    box-shadow: none; /* Remove any default box-shadow */
+    border: none; /* Remove any default borders */
+}
+
+.btn-small a{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+}

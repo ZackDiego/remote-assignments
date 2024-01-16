@@ -26,8 +26,7 @@
 
 @media screen and (min-width: 1200px) {
     .content-box {
-        flex: 1 590px;
-        max-width: 590px;
+        flex: 0 0 590px;
     }
 }
 

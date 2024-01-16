@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color: #093a58;
+    color: #093a58;
     text-decoration: none;
     padding: 1em;
 }
@@ -21,8 +21,6 @@ ul {
 ul li {
     padding: .8em;
 }
-
-
 
 
 /* ================================= 
@@ -46,13 +44,13 @@ ul li {
 .main-header {
     background-color: gainsboro;
     height: 50px;
-    /* margin: -8px -8px 0 -8px; */
+    
 }
 
 .banner {
-	background-color: #3acec2;
-	padding: 3.2em 0;
-	margin-bottom: 48px;
+    background-color: #3acec2;
+    padding: 3.2em 0;
+    margin-bottom: 48px;
     text-align: center;
 }
 
