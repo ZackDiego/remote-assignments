@@ -1,0 +1,65 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+    margin: 0px;
+}
+
+a, button {
+    color: #093a58;
+    text-decoration: none;
+    padding: 1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: .8em;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.content-box {
+    height: 300px;
+    width: 590px;
+    text-align: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
+
+
+.button {
+    background-color: lightblue;
+    text-align: center;
+    margin: 50px;
+    border: none;
+    box-shadow: none;
+}
+
+.main-header {
+    background-color: gainsboro;
+    height: 50px;
+    
+}
+
+.banner {
+    background-color: #3acec2;
+    padding: 3.2em 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+/* for hidden content */
+.hidden-content {
+    display: none;
+}
+
+
+

@@ -1,0 +1,33 @@
+
+
+.main-header,
+.main-nav,
+.main-content,
+.content-box-area {
+    display: flex;
+}
+
+.main-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box-area {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .content-box {
+        flex: 0 0 590px;
+    }
+}
+
