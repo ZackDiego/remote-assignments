@@ -15,6 +15,6 @@ const button = document.querySelector('.js-btn')
 
 // 2. addEventListener
 button.addEventListener( 'click', ()=> {
-    content.style.display = 'block';
+    content.style.display = 'flex';
 }
 )

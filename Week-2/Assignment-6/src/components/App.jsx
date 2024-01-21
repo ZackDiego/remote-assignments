@@ -33,7 +33,7 @@ const App = () =>{
       </section>
 
       {showMoreItems ? (
-        <section className="hidden-content main-content">
+        <section className="hidden-content">
           <ContentBoxArea />
         </section>
       ) : null}

@@ -3,7 +3,8 @@
 .main-header,
 .main-nav,
 .main-content,
-.content-box-area {
+.content-box-area,
+.hidden-content {
     display: flex;
 }
 
@@ -12,7 +13,7 @@
     justify-content: space-between;
 }
 
-.main-content {
+.main-content, .hidden-content {
     flex-direction: column;
     align-items: center;
 }
