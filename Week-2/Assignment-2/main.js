@@ -2,8 +2,8 @@ function avg(data) { // your code here
     price_arr = data.products     // access product array
         .map( prod => prod.price);   // get an array of products' prices
     
-    const avg_func = arr => arr.reduce( ( a, b ) => a + b, 0 ) / arr.length;
-    const avg_res = avg_func(price_arr);
+    const avg_res = price_arr
+        .reduce( ( a, b ) => a + b, 0 ) / price_arr.length;;
 
     return avg_res;
 }
