@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
 import java.net.URI;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 import static java.lang.Integer.parseInt;
 
@@ -39,7 +42,9 @@ public class api {
 
     @PostMapping("/trackName")
     public ResponseEntity<Object> trackName(@RequestParam(name = "name", required = true) String name) {
-        ResponseCookie cookie = ResponseCookie.from("userName", name).build();
+        String encoded_name = URLEncoder.encode(name, StandardCharsets.UTF_8);
+
+        ResponseCookie cookie = ResponseCookie.from("userName", encoded_name).build();
 
         return ResponseEntity
                 .status(HttpStatus.SEE_OTHER)
