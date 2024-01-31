@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -17,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import static java.lang.Integer.parseInt;
 
 @RestController
-public class api {
+public class Api {
 
     @GetMapping("/")
     public String helloWorld() {
@@ -41,7 +40,7 @@ public class api {
         }
     }
 
-    @GetMapping("/trackName")
+    @PostMapping("/trackName")
     public ResponseEntity<Object> trackName(@RequestParam(name = "name", required = true) String name) {
         String encoded_name = URLEncoder.encode(name, StandardCharsets.UTF_8);
 
