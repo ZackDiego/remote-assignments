@@ -28,7 +28,8 @@ public class api {
     // assignment 2
     @GetMapping("/data")
     public String data(@RequestParam(name = "number", required = false) String number) {
-        if (number.isEmpty()) {
+        System.out.println(number);
+        if (number == null || number.isEmpty() ) {
             return "Lack of Parameter";
         }
         try {
@@ -40,7 +41,7 @@ public class api {
         }
     }
 
-    @PostMapping("/trackName")
+    @GetMapping("/trackName")
     public ResponseEntity<Object> trackName(@RequestParam(name = "name", required = true) String name) {
         String encoded_name = URLEncoder.encode(name, StandardCharsets.UTF_8);
 
