@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<h2>Hello user, please sign in or sign up to continue.</h2>
+<div class="form-container">
+
+    <div class="form">
+        <h3>Sign In form</h3>
+        <form id="signInForm" action="#" accept-charset="UTF-8">
+            <label for="signInEmail">Email:</label><br>
+            <input type="text" id="signInEmail" name="email"><br>
+            <label for="signInPassword">Password:</label><br>
+            <input type="password" id="signInPassword" name="password"><br>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <div class="form">
+        <h3>Sign up form</h3>
+        <form id="signUpForm" action="#" accept-charset="UTF-8">
+            <label for="signUpEmail">Email:</label><br>
+            <input type="text" id="signUpEmail" name="email"><br>
+            <label for="signUpPassword">Password:</label><br>
+            <input type="password" id="signUpPassword" name="password"><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+<script th:src="@{/main.js}"></script>
+</body>
+</html>
